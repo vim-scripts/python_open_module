@@ -1,0 +1,23 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2473
+
+the python_open_module.vim is the script that allows you open the module file  below the cursor when coding python. It's easy to use. For example, you can create a new python file and input:
+
+import string
+
+move the cursor above "string" and press "<LocalLeader>oo"("\oo" in common in vim) in normal mode You could see the string.py file opened in current window. you can continue to input:
+
+string.lower
+
+do same above and you can see string.py file opened the cursor jump into lower function.
+
+the open fail if the module is buildin such as 'sys' or is not available.
+
+There are three options for mapping key, you can chang it to any other key:
+
+pom_key_open='<LocalLeader>oo'              # open module file in the current window
+pom_key_open_in_win='<LocalLeader>ow'             # open module file in a new window
+pom_key_open_in_tab='<LocalLeader>ot'               # open module file in a tab
+
+
+WORNING: Required vim compiled with +python
+
