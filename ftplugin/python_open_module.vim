@@ -1,6 +1,6 @@
 " vim: ts=4 shiftwidth=4 expandtab fdm=marker
 " author: tocer tocer.deng@gmail.com
-" version: 1.0
+" version: 1.0.1
 " lastchange: 2008-12-14
 
 
@@ -12,6 +12,7 @@ endif
 " the following is python code {{{
 python << eof
 
+import vim
 if vim.eval('exists("g:pom_key_open")') == '0':
     key_open = '<LocalLeader>oo'
 else:
