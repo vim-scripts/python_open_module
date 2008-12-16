@@ -1,7 +1,7 @@
 " vim: ts=4 shiftwidth=4 expandtab fdm=marker
 " author: tocer tocer.deng@gmail.com
-" version: 1.0.1
-" lastchange: 2008-12-14
+" version: 1.0.2
+" lastchange: 2008-12-16
 
 
 if !has('python')
@@ -109,7 +109,7 @@ class PyModuleOpener(object):
     def open(self):
         fname, linenum = self._open()
         if fname:
-            cmd = 'edit %s | %d' % (fname, linenum+1)
+            cmd = 'hide edit %s | %d' % (fname, linenum+1)
             vim.command(cmd)
 
     def open_in_win(self):
